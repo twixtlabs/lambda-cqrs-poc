@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.NoOpLoggerImpl = void 0;
+/* eslint-disable @typescript-eslint/no-empty-function, @typescript-eslint/no-unused-vars */
+class NoOpLoggerImpl {
+    debug(opts) { }
+    error(opts) { }
+    fatal(opts) { }
+    info(opts) { }
+    trace(opts) { }
+    warn(opts) { }
+}
+exports.NoOpLoggerImpl = NoOpLoggerImpl;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTm9PcExvZ2dlckltcGwuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvbG9nZ2luZy9ub29wL05vT3BMb2dnZXJJbXBsLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUVBLDRGQUE0RjtBQUM1RixNQUFhLGNBQWM7SUFDekIsS0FBSyxDQUFDLElBQW1CLElBQVMsQ0FBQztJQUVuQyxLQUFLLENBQUMsSUFBbUIsSUFBUyxDQUFDO0lBRW5DLEtBQUssQ0FBQyxJQUFtQixJQUFTLENBQUM7SUFFbkMsSUFBSSxDQUFDLElBQW1CLElBQVMsQ0FBQztJQUVsQyxLQUFLLENBQUMsSUFBbUIsSUFBUyxDQUFDO0lBRW5DLElBQUksQ0FBQyxJQUFtQixJQUFTLENBQUM7Q0FDbkM7QUFaRCx3Q0FZQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IExvZ2dlciwgTG9nTWV0aG9kT3B0cyB9IGZyb20gXCIuLi9Mb2dnZXJcIjtcblxuLyogZXNsaW50LWRpc2FibGUgQHR5cGVzY3JpcHQtZXNsaW50L25vLWVtcHR5LWZ1bmN0aW9uLCBAdHlwZXNjcmlwdC1lc2xpbnQvbm8tdW51c2VkLXZhcnMgKi9cbmV4cG9ydCBjbGFzcyBOb09wTG9nZ2VySW1wbCBpbXBsZW1lbnRzIExvZ2dlciB7XG4gIGRlYnVnKG9wdHM6IExvZ01ldGhvZE9wdHMpOiB2b2lkIHt9XG5cbiAgZXJyb3Iob3B0czogTG9nTWV0aG9kT3B0cyk6IHZvaWQge31cblxuICBmYXRhbChvcHRzOiBMb2dNZXRob2RPcHRzKTogdm9pZCB7fVxuXG4gIGluZm8ob3B0czogTG9nTWV0aG9kT3B0cyk6IHZvaWQge31cblxuICB0cmFjZShvcHRzOiBMb2dNZXRob2RPcHRzKTogdm9pZCB7fVxuXG4gIHdhcm4ob3B0czogTG9nTWV0aG9kT3B0cyk6IHZvaWQge31cbn1cbiJdfQ==

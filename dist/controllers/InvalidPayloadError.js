@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.InvalidPayloadError = void 0;
+class InvalidPayloadError extends Error {
+    constructor() {
+        super("Payload failed validation");
+        this.violations = [];
+        Object.setPrototypeOf(this, InvalidPayloadError.prototype);
+    }
+    add(violation) {
+        this.violations.push(violation);
+    }
+}
+exports.InvalidPayloadError = InvalidPayloadError;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW52YWxpZFBheWxvYWRFcnJvci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9jb250cm9sbGVycy9JbnZhbGlkUGF5bG9hZEVycm9yLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUtBLE1BQWEsbUJBQW9CLFNBQVEsS0FBSztJQUU1QztRQUNFLEtBQUssQ0FBQywyQkFBMkIsQ0FBQyxDQUFDO1FBRnJCLGVBQVUsR0FBZ0IsRUFBRSxDQUFDO1FBRzNDLE1BQU0sQ0FBQyxjQUFjLENBQUMsSUFBSSxFQUFFLG1CQUFtQixDQUFDLFNBQVMsQ0FBQyxDQUFDO0lBQzdELENBQUM7SUFFRCxHQUFHLENBQUMsU0FBb0I7UUFDdEIsSUFBSSxDQUFDLFVBQVUsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLENBQUM7SUFDbEMsQ0FBQztDQUNGO0FBVkQsa0RBVUMiLCJzb3VyY2VzQ29udGVudCI6WyJ0eXBlIFZpb2xhdGlvbiA9IHtcbiAgcHJvcGVydHk6IHN0cmluZztcbiAgdmFsdWU6IHN0cmluZztcbiAgY29uc3RyYWludHM6IFJlY29yZDxzdHJpbmcsIHVua25vd24+O1xufTtcbmV4cG9ydCBjbGFzcyBJbnZhbGlkUGF5bG9hZEVycm9yIGV4dGVuZHMgRXJyb3Ige1xuICBwdWJsaWMgcmVhZG9ubHkgdmlvbGF0aW9uczogVmlvbGF0aW9uW10gPSBbXTtcbiAgY29uc3RydWN0b3IoKSB7XG4gICAgc3VwZXIoXCJQYXlsb2FkIGZhaWxlZCB2YWxpZGF0aW9uXCIpO1xuICAgIE9iamVjdC5zZXRQcm90b3R5cGVPZih0aGlzLCBJbnZhbGlkUGF5bG9hZEVycm9yLnByb3RvdHlwZSk7XG4gIH1cblxuICBhZGQodmlvbGF0aW9uOiBWaW9sYXRpb24pOiB2b2lkIHtcbiAgICB0aGlzLnZpb2xhdGlvbnMucHVzaCh2aW9sYXRpb24pO1xuICB9XG59XG4iXX0=

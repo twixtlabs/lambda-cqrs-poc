@@ -1,0 +1,76 @@
+{
+  "name": "@twixtlabs/lambda-cqrs-poc",
+  "version": "0.0.1",
+  "description": "Utility/Base classes for a simple Lambda Command/Query Handler POC",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twixtlabs/lambda-cqrs-poc.git"
+  },
+  "scripts": {
+    "build": "tsc ",
+    "watch": "tsc -w",
+    "test": "jest --passWithNoTests",
+    "lint": "eslint . --ext .ts",
+    "prettier": "prettier --config .prettierrc '{src,__tests__}/**/*.ts' --write",
+    "prepublishOnly": "npm run lint && npm run test",
+    "preversion": "npm run lint",
+    "version": "git add -A ",
+    "postversion": "git push && git push --tags"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/__tests__",
+      "<rootDir>/src"
+    ],
+    "testMatch": [
+      "**/*.test.ts"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.ts*"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier && npm run lint && npm run test && npm run build"
+    }
+  },
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.61",
+    "class-transformer": "^0.3.1",
+    "class-transformer-validator": "^0.9.1",
+    "class-validator": "^0.12.2",
+    "reflect-metadata": "^0.1.13",
+    "uuid": "^8.3.0"
+  },
+  "peerDependencies": {
+    "aws-sdk": "^2.742.0",
+    "bunyan": "^1.8.12"
+  },
+  "devDependencies": {
+    "@types/bunyan": "^1.8.6",
+    "@types/jest": "^26.0.10",
+    "@types/uuid": "^8.3.0",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/parser": "^3.8.0",
+    "aws-sdk": "^2.742.0",
+    "bunyan": "^1.8.12",
+    "eslint": "^7.6.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "jest": "^26.4.2",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.2.0",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.9.7"
+  }
+}

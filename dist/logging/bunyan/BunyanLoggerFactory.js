@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.BunyanLoggerFactory = void 0;
+const Logger = require("bunyan");
+const BunyanLoggerImpl_1 = require("./BunyanLoggerImpl");
+class BunyanLoggerFactory {
+    createLogger(name) {
+        return new BunyanLoggerImpl_1.BunyanLoggerImpl({
+            name,
+            level: process.env.LOG_LEVEL || Logger.INFO,
+        });
+    }
+}
+exports.BunyanLoggerFactory = BunyanLoggerFactory;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQnVueWFuTG9nZ2VyRmFjdG9yeS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9sb2dnaW5nL2J1bnlhbi9CdW55YW5Mb2dnZXJGYWN0b3J5LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUNBLGlDQUFpQztBQUVqQyx5REFBc0Q7QUFFdEQsTUFBYSxtQkFBbUI7SUFDOUIsWUFBWSxDQUFDLElBQVk7UUFDdkIsT0FBTyxJQUFJLG1DQUFnQixDQUFDO1lBQzFCLElBQUk7WUFDSixLQUFLLEVBQUcsT0FBTyxDQUFDLEdBQUcsQ0FBQyxTQUE2QixJQUFJLE1BQU0sQ0FBQyxJQUFJO1NBQ2pFLENBQUMsQ0FBQztJQUNMLENBQUM7Q0FDRjtBQVBELGtEQU9DIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTG9nZ2VyRmFjdG9yeSB9IGZyb20gXCIuLi9Mb2dnZXJGYWN0b3J5XCI7XG5pbXBvcnQgKiBhcyBMb2dnZXIgZnJvbSBcImJ1bnlhblwiO1xuaW1wb3J0IHsgTG9nZ2VyIGFzIExvZ2dlckludGVyZmFjZSB9IGZyb20gXCIuLi9Mb2dnZXJcIjtcbmltcG9ydCB7IEJ1bnlhbkxvZ2dlckltcGwgfSBmcm9tIFwiLi9CdW55YW5Mb2dnZXJJbXBsXCI7XG5cbmV4cG9ydCBjbGFzcyBCdW55YW5Mb2dnZXJGYWN0b3J5IGltcGxlbWVudHMgTG9nZ2VyRmFjdG9yeSB7XG4gIGNyZWF0ZUxvZ2dlcihuYW1lOiBzdHJpbmcpOiBMb2dnZXJJbnRlcmZhY2Uge1xuICAgIHJldHVybiBuZXcgQnVueWFuTG9nZ2VySW1wbCh7XG4gICAgICBuYW1lLFxuICAgICAgbGV2ZWw6IChwcm9jZXNzLmVudi5MT0dfTEVWRUwgYXMgTG9nZ2VyLkxvZ0xldmVsKSB8fCBMb2dnZXIuSU5GTyxcbiAgICB9KTtcbiAgfVxufVxuIl19

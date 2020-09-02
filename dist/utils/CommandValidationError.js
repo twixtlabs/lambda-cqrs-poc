@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CommandValidationError = void 0;
+class CommandValidationError extends Error {
+    constructor() {
+        super("Command validation failed");
+        this.violations = [];
+        Object.setPrototypeOf(this, CommandValidationError.prototype);
+    }
+    add(violation) {
+        this.violations.push(violation);
+    }
+}
+exports.CommandValidationError = CommandValidationError;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29tbWFuZFZhbGlkYXRpb25FcnJvci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy91dGlscy9Db21tYW5kVmFsaWRhdGlvbkVycm9yLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUtBLE1BQWEsc0JBQXVCLFNBQVEsS0FBSztJQUUvQztRQUNFLEtBQUssQ0FBQywyQkFBMkIsQ0FBQyxDQUFDO1FBRnJCLGVBQVUsR0FBZ0IsRUFBRSxDQUFDO1FBRzNDLE1BQU0sQ0FBQyxjQUFjLENBQUMsSUFBSSxFQUFFLHNCQUFzQixDQUFDLFNBQVMsQ0FBQyxDQUFDO0lBQ2hFLENBQUM7SUFFRCxHQUFHLENBQUMsU0FBb0I7UUFDdEIsSUFBSSxDQUFDLFVBQVUsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLENBQUM7SUFDbEMsQ0FBQztDQUNGO0FBVkQsd0RBVUMiLCJzb3VyY2VzQ29udGVudCI6WyJ0eXBlIFZpb2xhdGlvbiA9IHtcbiAgcHJvcGVydHk6IHN0cmluZztcbiAgdmFsdWU6IHN0cmluZztcbiAgY29uc3RyYWludHM6IFJlY29yZDxzdHJpbmcsIHVua25vd24+O1xufTtcbmV4cG9ydCBjbGFzcyBDb21tYW5kVmFsaWRhdGlvbkVycm9yIGV4dGVuZHMgRXJyb3Ige1xuICBwdWJsaWMgcmVhZG9ubHkgdmlvbGF0aW9uczogVmlvbGF0aW9uW10gPSBbXTtcbiAgY29uc3RydWN0b3IoKSB7XG4gICAgc3VwZXIoXCJDb21tYW5kIHZhbGlkYXRpb24gZmFpbGVkXCIpO1xuICAgIE9iamVjdC5zZXRQcm90b3R5cGVPZih0aGlzLCBDb21tYW5kVmFsaWRhdGlvbkVycm9yLnByb3RvdHlwZSk7XG4gIH1cblxuICBhZGQodmlvbGF0aW9uOiBWaW9sYXRpb24pOiB2b2lkIHtcbiAgICB0aGlzLnZpb2xhdGlvbnMucHVzaCh2aW9sYXRpb24pO1xuICB9XG59XG4iXX0=

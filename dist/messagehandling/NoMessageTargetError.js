@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.NoMessageTargetError = void 0;
+class NoMessageTargetError extends Error {
+    constructor(message) {
+        super(message);
+        Object.setPrototypeOf(this, NoMessageTargetError.prototype);
+    }
+}
+exports.NoMessageTargetError = NoMessageTargetError;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTm9NZXNzYWdlVGFyZ2V0RXJyb3IuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvbWVzc2FnZWhhbmRsaW5nL05vTWVzc2FnZVRhcmdldEVycm9yLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLE1BQWEsb0JBQXFCLFNBQVEsS0FBSztJQUM3QyxZQUFZLE9BQWdCO1FBQzFCLEtBQUssQ0FBQyxPQUFPLENBQUMsQ0FBQztRQUNmLE1BQU0sQ0FBQyxjQUFjLENBQUMsSUFBSSxFQUFFLG9CQUFvQixDQUFDLFNBQVMsQ0FBQyxDQUFDO0lBQzlELENBQUM7Q0FDRjtBQUxELG9EQUtDIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNsYXNzIE5vTWVzc2FnZVRhcmdldEVycm9yIGV4dGVuZHMgRXJyb3Ige1xuICBjb25zdHJ1Y3RvcihtZXNzYWdlPzogc3RyaW5nKSB7XG4gICAgc3VwZXIobWVzc2FnZSk7XG4gICAgT2JqZWN0LnNldFByb3RvdHlwZU9mKHRoaXMsIE5vTWVzc2FnZVRhcmdldEVycm9yLnByb3RvdHlwZSk7XG4gIH1cbn1cbiJdfQ==

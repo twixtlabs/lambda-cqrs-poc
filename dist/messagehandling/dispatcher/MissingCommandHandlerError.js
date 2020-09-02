@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.MissingCommandHandlerError = void 0;
+class MissingCommandHandlerError extends Error {
+    constructor(message) {
+        super(message);
+        Object.setPrototypeOf(this, MissingCommandHandlerError.prototype);
+    }
+}
+exports.MissingCommandHandlerError = MissingCommandHandlerError;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTWlzc2luZ0NvbW1hbmRIYW5kbGVyRXJyb3IuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvbWVzc2FnZWhhbmRsaW5nL2Rpc3BhdGNoZXIvTWlzc2luZ0NvbW1hbmRIYW5kbGVyRXJyb3IudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsTUFBYSwwQkFBMkIsU0FBUSxLQUFLO0lBQ25ELFlBQVksT0FBZ0I7UUFDMUIsS0FBSyxDQUFDLE9BQU8sQ0FBQyxDQUFDO1FBQ2YsTUFBTSxDQUFDLGNBQWMsQ0FBQyxJQUFJLEVBQUUsMEJBQTBCLENBQUMsU0FBUyxDQUFDLENBQUM7SUFDcEUsQ0FBQztDQUNGO0FBTEQsZ0VBS0MiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgY2xhc3MgTWlzc2luZ0NvbW1hbmRIYW5kbGVyRXJyb3IgZXh0ZW5kcyBFcnJvciB7XG4gIGNvbnN0cnVjdG9yKG1lc3NhZ2U/OiBzdHJpbmcpIHtcbiAgICBzdXBlcihtZXNzYWdlKTtcbiAgICBPYmplY3Quc2V0UHJvdG90eXBlT2YodGhpcywgTWlzc2luZ0NvbW1hbmRIYW5kbGVyRXJyb3IucHJvdG90eXBlKTtcbiAgfVxufVxuIl19
